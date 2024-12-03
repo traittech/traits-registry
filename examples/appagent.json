@@ -1,0 +1,13 @@
+{
+    "metadata_id": "12345",
+    "title": "Some title of the document",
+    "description": "Some description of the document",
+    "traits": {
+        "named": {
+            "name": "AppAgent name"
+        },
+        "tech.trait.wallet.square_icon": {
+            "image_url": "https://github.com/traittech/traits-registry/tests/trait-logo-150.svg"
+        }
+    }
+}

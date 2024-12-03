@@ -1,0 +1,16 @@
+{
+    "metadata_id": "ABCDEFG",
+    "title": "Some title of the document",
+    "description": "Some description of the document",
+    "traits": {
+        "named": {
+            "name": "NFT collection name"
+        },
+        "tech.trait.wallet.square_icon": {
+            "image_url": "https://github.com/traittech/traits-registry/tests/trait-logo-150.svg"
+        },
+        "tech.trait.wallet.nft_collection_listing_image": {
+            "image_url": "https://github.com/traittech/traits-registry/tests/trait-logo-512.svg"
+        }
+    }
+}
