@@ -12,14 +12,14 @@ const metadataValidate = ajv.compile(metadataSchema)
 export const validateMetadata = (data: JsonMetadata): boolean => metadataValidate(data)
 
 export const validateTraits = (data: JsonMetadata, _registry: Registry = registry, _traitsToValidate?: string[]): string[] => {
-  if(!validateMetadata(data)){
+  if (!validateMetadata(data)) {
     throw new Error('');
   }
 
   const traitsToValidate = _traitsToValidate || Object.keys(data.traits)
 
   return traitsToValidate.filter((key) => {
-    if(!_registry[key] || !data.traits[key]){
+    if (!_registry[key] || !data.traits[key]) {
       return false;
     }
 
@@ -27,3 +27,6 @@ export const validateTraits = (data: JsonMetadata, _registry: Registry = registr
     return validate(data.traits[key])
   })
 };
+
+export const METADATA_SCHEMA = metadataSchema
+export const DEFAULT_REGISTRY = registry

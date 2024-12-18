@@ -1,8 +1,12 @@
 {
-  "name": "metadata-validator",
+  "name": "@traittech/traits-validator",
   "version": "0.0.1",
   "main": "index.js",
-  "license": "MIT",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traittech/traits-registry.git"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.production.json",
     "test": "jest"

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.validateTraits = exports.validateMetadata = void 0;
+exports.DEFAULT_REGISTRY = exports.METADATA_SCHEMA = exports.validateTraits = exports.validateMetadata = void 0;
 const _2020_1 = __importDefault(require("ajv/dist/2020"));
 const ajv_formats_1 = __importDefault(require("ajv-formats"));
 const registry_json_1 = __importDefault(require("./scripts/registry.json"));
@@ -27,3 +27,5 @@ const validateTraits = (data, _registry = registry_json_1.default, _traitsToVali
     });
 };
 exports.validateTraits = validateTraits;
+exports.METADATA_SCHEMA = metadata_schema_json_1.default;
+exports.DEFAULT_REGISTRY = registry_json_1.default;
