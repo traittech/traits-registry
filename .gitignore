@@ -10,3 +10,10 @@ __pycache__
 py-traits-validator/src/traitsvalidator/registry/
 py-traits-validator/build/
 *.egg-info/
+
+# node.js
+#
+.yarn/cache/
+node_modules/
+npm-debug.log
+yarn-error.log
