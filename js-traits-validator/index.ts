@@ -1,7 +1,7 @@
 import Ajv2020 from 'ajv/dist/2020';
 import addFormats from 'ajv-formats';
-import registry from './scripts/registry.json';
-import metadataSchema from '../traits/metadata_schema.json';
+import registry from './schemes/registry.json';
+import metadataSchema from './schemes/metadata_schema.json';
 import { JsonMetadata, Registry } from './types';
 
 const ajv = new Ajv2020();

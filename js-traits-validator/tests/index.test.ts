@@ -1,5 +1,5 @@
 import { validateTraits } from '../'
-import registry from '../scripts/registry.json';
+import registry from '../schemes/registry.json';
 import appagent from '../../examples/appagent.json';
 import fungible_token from '../../examples/fungible_token.json';
 import nft_collection from '../../examples/nft_collection.json';

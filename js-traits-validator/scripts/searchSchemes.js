@@ -33,5 +33,5 @@ const searchSchemes = async (dir, filelist = []) => {
 
 
 searchSchemes(source)
-  .then(() => fs.writeFile('registry.json', JSON.stringify(result, null, 3), 'utf8', () => console.log('done')))
+  .then(() => fs.writeFile('../schemes/registry.json', JSON.stringify(result, null, 3), 'utf8', () => console.log('done')))
   .catch((e) => console.log('error', e))
