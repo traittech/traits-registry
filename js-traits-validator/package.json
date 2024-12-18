@@ -2,13 +2,14 @@
   "name": "@traittech/traits-validator",
   "version": "0.0.1",
   "main": "index.js",
+  "types": "index.d.ts",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/traittech/traits-registry.git"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.production.json",
+    "build": "tsc -p tsconfig.production.json --declaration",
     "test": "jest"
   },
   "dependencies": {
