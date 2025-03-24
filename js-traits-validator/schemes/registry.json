@@ -10,7 +10,7 @@
             "description": "The short symbol of the token.",
             "type": "string",
             "minLength": 1,
-            "maxLength": 8
+            "maxLength": 16
          },
          "decimals": {
             "description": "The number of decimal places of the token.",
