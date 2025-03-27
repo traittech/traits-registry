@@ -315,6 +315,40 @@ export declare const DEFAULT_REGISTRY: {
         required: string[];
         additionalProperties: boolean;
     };
+    "tech.trait.wallet.price_feed": {
+        $id: string;
+        $schema: string;
+        title: string;
+        description: string;
+        type: string;
+        properties: {
+            current_price: {
+                description: string;
+                oneOf: {
+                    $ref: string;
+                }[];
+            };
+        };
+        required: string[];
+        $defs: {
+            tiingo: {
+                type: string;
+                properties: {
+                    source: {
+                        const: string;
+                    };
+                    ticker: {
+                        description: string;
+                        minLength: number;
+                        maxLength: number;
+                    };
+                };
+                required: string[];
+                additionalProperties: boolean;
+            };
+        };
+        additionalProperties: boolean;
+    };
     "tech.trait.wallet.square_icon": {
         $id: string;
         $schema: string;
