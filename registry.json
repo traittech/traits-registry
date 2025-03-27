@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "registry": [
         {
             "trait_id": "named",
@@ -47,6 +47,12 @@
             "trait_id": "tech.trait.wallet.nft_token_attributes",
             "specification": "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/tech.trait.wallet/nft_token_attributes/trait.json",
             "description": "Attributes of an NFT displayed on the token' page.",
+            "status": "active"
+        },
+        {
+            "trait_id": "tech.trait.wallet.price_feed",
+            "specification": "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/tech.trait.wallet/price_feed/trait.json",
+            "description": "Information to get asset price.",
             "status": "active"
         }
     ]

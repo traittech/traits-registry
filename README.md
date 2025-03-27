@@ -15,7 +15,7 @@ Please read more about metadata and traits in the docs portal: [TRAIT Docs](http
 - Fork and clone this repo;
 - Add an additional trait to the dir `traits/`;
   - name of the directory is the ID of the trait. ID of app-specific traits must follow reverse DNS notation;
-  - directory can caontain several files with definition of the trait. The root file in the directoty must be named `trait.json`;
+  - directory can contain several files with definition of the trait. The root file in the directoty must be named `trait.json`;
 - Add an entry to the `registry.json` file;
 - Increase the minor (middle) version number;
 - Run git stage, commit, push to GitHub;
