@@ -12,6 +12,12 @@
         },
         "tech.trait.wallet.square_icon": {
             "image_url": "https://github.com/traittech/traits-registry/tests/trait-logo-150.svg"
+        },
+        "tech.trait.wallet.price_feed": {
+            "current_price": {
+                "source": "tiingo",
+                "ticker": "NVDA"
+            }
         }
     }
 }
