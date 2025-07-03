@@ -15,7 +15,7 @@ class TestConfig:
     REGISTRY_PATH: Path = Path(__file__).parent.parent.parent / REGISTRY_NAME
     TRAITS_PATH: Path = Path(__file__).parent.parent.parent / "traits"
 
-    TRAITS_BASE_URI: str = "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/"
+    TRAITS_BASE_URI: str = "https://traittech.github.io/traits-registry/traits/"
 
     HTTP_TIMEOUT: float = 30.0  # 30 seconds
 

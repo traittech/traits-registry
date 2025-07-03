@@ -4,7 +4,7 @@ from typing import Any
 
 from jsonschema import Draft202012Validator, validate
 
-_TRAITS_BASE_URI: str = "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/"
+_TRAITS_BASE_URI: str = "https://traittech.github.io/traits-registry/traits/"
 
 
 class TraitsValidator:
