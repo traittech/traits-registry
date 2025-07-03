@@ -2,7 +2,7 @@
 name = "traitsvalidator"
 version = "1.0.0"
 authors = [
-  { name="Trait Tech PTE LTD", email="info@trait.tech" },
+    { name="Trait Tech PTE LTD", email="info@trait.tech" },
 ]
 description = "Python validator of traits"
 classifiers = [
@@ -11,11 +11,21 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 requires-python = ">=3.12"
-dependencies = ["jsonschema == 4.23.0"]
+dependencies = ["jsonschema == 4.24.0"]
 
 
 [project.optional-dependencies]
-dev = [ "types-jsonschema", "requests", "types-requests", "pydantic", "ruff", "mypy" ]
+test = [
+    "mypy",
+    "pydantic",
+    "pylint[spelling]>=3.3.7",
+    "pylint-pydantic>=0.3.5",
+    "pyright",
+    "ruff",
+    "requests",
+    "types-jsonschema",
+    "types-requests",
+]
 
 
 [project.urls]

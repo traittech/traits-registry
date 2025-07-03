@@ -108,7 +108,7 @@ class TraitsValidator:
         return validated_traits
 
     def get_initialised_traits(self: "TraitsValidator") -> list[str]:
-        return self._traits_registry.keys()
+        return list(self._traits_registry.keys())
 
     def _validate_document_schema(self: "TraitsValidator", data: dict[str, Any]) -> None:
         try:
