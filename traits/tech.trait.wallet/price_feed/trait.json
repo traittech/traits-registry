@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/tech.trait.wallet/price_feed/trait.json",
+    "$id": "https://traittech.github.io/traits-registry/traits/tech.trait.wallet/price_feed/trait.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Information to get current price of the asset",
     "description": "This trait provides the information that allows to fetch current price of the asset.",

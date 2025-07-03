@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/tech.trait.wallet/square_icon/trait.json",
+    "$id": "https://traittech.github.io/traits-registry/traits/tech.trait.wallet/square_icon/trait.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Small squre icon",
     "description": "The trait provides info about a small squre icon of an on-chain entity, used by the TRAIT Wallet. Size of the icon: 512x512px. Suported formats: WebP, PNG / APNG, JPEG / JPG, GIF, SVG.",

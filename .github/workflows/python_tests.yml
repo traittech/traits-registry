@@ -33,7 +33,7 @@ jobs:
         run: |
           cd py-traits-validator
           python3 ./scripts/bundle_registry.py
-          pip install -e '.[dev]' --config-settings editable_mode=strict
+          pip install -e '.[test]' --config-settings editable_mode=strict
 
       - name: Check code with ruff
         run: cd py-traits-validator && ruff check --output-format=github
@@ -41,8 +41,14 @@ jobs:
       - name: Check code formatting with ruff
         run: cd py-traits-validator && ruff format --check
 
+      - name: Check code with Pylint
+        run: cd py-traits-validator && pylint --disable=C,R --load-plugins pylint_pydantic scripts src tests
+
       - name: Check code with MYPY
         run: cd py-traits-validator && mypy .
+
+      - name: Check code with Pyright
+        run: cd py-traits-validator && pyright scripts src tests
 
 
   py-tests:
@@ -69,7 +75,7 @@ jobs:
         run: |
           cd py-traits-validator
           python3 ./scripts/bundle_registry.py
-          pip install -e '.[dev]' --config-settings editable_mode=strict
+          pip install -e '.[test]' --config-settings editable_mode=strict
 
       - name: Run unit tests
         run: cd py-traits-validator && python3 -m unittest discover

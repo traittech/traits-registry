@@ -15,7 +15,7 @@ class TestConfig:
     REGISTRY_PATH: Path = Path(__file__).parent.parent.parent / REGISTRY_NAME
     TRAITS_PATH: Path = Path(__file__).parent.parent.parent / "traits"
 
-    TRAITS_BASE_URI: str = "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/"
+    TRAITS_BASE_URI: str = "https://traittech.github.io/traits-registry/traits/"
 
     HTTP_TIMEOUT: float = 30.0  # 30 seconds
 
@@ -88,7 +88,9 @@ class TestRegistry(unittest.TestCase):
         with (TestConfig.EXAMPLE_META_DIR / "fungible_token.json").open() as fp:
             fungible_meta = json.load(fp)
         available_traits = validator.validate_metadata(fungible_meta)
-        self.assertEqual(available_traits, ["named", "fungible", "tech.trait.wallet.square_icon", "tech.trait.wallet.price_feed"])
+        self.assertEqual(
+            available_traits, ["named", "fungible", "tech.trait.wallet.square_icon", "tech.trait.wallet.price_feed"]
+        )
 
         # Validate metadata of nft collection
         with (TestConfig.EXAMPLE_META_DIR / "nft_collection.json").open() as fp:

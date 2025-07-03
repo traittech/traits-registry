@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/tech.trait.wallet/nft_collection_listing_image/trait.json",
+    "$id": "https://traittech.github.io/traits-registry/traits/tech.trait.wallet/nft_collection_listing_image/trait.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "NFT image used in the list of NFT collections.",
     "description": "The trait provides info about an image used in the list of NFT collections. Expected size of the image: 1024x1024px. Suported formats: WebP, PNG / APNG, JPEG / JPG, GIF, SVG.",

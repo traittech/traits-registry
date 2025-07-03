@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/traittech/traits-registry/refs/heads/main/traits/tech.trait.wallet/nft_token_attributes/trait.json",
+    "$id": "https://traittech.github.io/traits-registry/traits/tech.trait.wallet/nft_token_attributes/trait.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "NFT attributes",
     "description": "Attributes of an NFT displayed on the token' page.",
